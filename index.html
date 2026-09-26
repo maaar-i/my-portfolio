@@ -132,7 +132,7 @@
 
         <div class="project-cards">
             <div>
-                <img src="./img/shoppingcart.png" style="padding:80px; background:linear-gradient(rgb(35,45,189),rgb(66,30,188),rgb(89,0,173));">
+                <img src="./img/shoppingcart.png" style="padding-right: 80px; padding-left: 80px; padding-top:50px; padding-bottom:50px; background:linear-gradient(rgb(35,45,189),rgb(66,30,188),rgb(89,0,173));">
                 <!-- <img src="./img/shoppingcart.png" style="background:linear-gradient(rgb(35,45,189),rgb(66,30,188),rgb(89,0,173));"> -->
                 <h3>E-commerce Platform</h3>
                 <p>A full-featured e-commerce platform with real-time inventory management, payment processing, and analytics dashboard.</p>
@@ -191,7 +191,7 @@
             </div>
 
             <div>
-                <img src="./img/socialsimage.PNG" style="padding:60px; background: linear-gradient(rgb(0,107,59),rgb(0,112,51),rgb(0,144,45));" >
+                <img src="./img/socialsimage.PNG" style="padding-top:20px; padding-bottom:20px; padding-right:75px; padding-left:70px; background: linear-gradient(rgb(0,107,59),rgb(0,112,51),rgb(0,144,45));" >
                 <h3>Social Media Platform</h3>
                 <p>Modern social networking platform with posts, stories, messaging, and content recommendation engine.</p>
                 <ul>
@@ -222,29 +222,28 @@
     </section>
 
     <section class="get-in-touch">
-        <h2>Get <span style="padding-bottom:7px; border-bottom: 4px solid rgb(18,64,250);">In To</span>uch</h2>
-        <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
-        <h3>Let's Connect</h3>
+        <div class="get-in-touch-header">
+            <h2>Get <span style="padding-bottom:7px; border-bottom: 4px solid rgb(18,64,250);">In To</span>uch</h2>
+            <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
+        </div>
 
         <div class="get-in-touch-cards">
             <div>
+                <h3>Let's Connect</h3>
                 <ul>
                     <li>
                         <i class="fa-regular fa-envelope"></i>
-                        <p>Email</p>
-                        <p>john.dev@example.com</p>
+                        <p> <span style="padding-bottom:7px; font-size: 12px; color: rgb(126,143,171);">Email</span> <br> john.dev@example.com</p>
                     </li>
                     
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <p>Phone</p>
-                        <p>+1 (555) 123-4567</p>
+                        <p> <span style="padding-bottom:7px; font-size: 12px; color: rgb(126,143,171);">Phone</span> <br> +1 (555) 123-4567</p>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>Location</p>
-                        <p>San Francisco, CA</p>
+                        <p> <span style="padding-bottom:7px; font-size: 12px; color: rgb(126,143,171);">Location</span> <br> San Francisco, CA</p>
                     </li>
                 </ul>
             </div>
@@ -252,20 +251,21 @@
             <div>
                 <form>
 
-                    <p> Name<br>
-                        <input type="text" placeholder="Your name">
-                    </p>
+                    <!-- <div class="form-entries"> -->
+                        <p> <span class="input-header"> Name</span><br>
+                            <input type="text" placeholder="Your name" class="input-container">
+                        </p>
 
-                    <p> Email<br>
-                        <input type="email" placeholder="your@email.com">
-                    </p>
+                        <p> <span class="input-header"> Email</span><br>
+                            <input type="email" placeholder="your@email.com" class="in">
+                        </p>
 
-                    <p> Message<br>
-                        <textarea placeholder="Your message..."></textarea>
-                    </p>
-
-                    <input type="submit" value="Send Message">
-
+                        <p> <span class="input-header">  Message</span><br>
+                            <textarea placeholder="Your message..." rows="10" cols="33"></textarea>
+                        </p>
+                    <!-- </div> -->
+                    
+                    <input type="submit" value="Send Message" style="background-color: conic-gradient(rgb(122,0,251),rgb(62,87,255),rgb(122,0,251)); color:white;">
                 </form>
             </div>
         </div>

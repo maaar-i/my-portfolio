@@ -181,10 +181,12 @@
 
 .skills .skillcards{
     margin: 70px;
+    /* margin-bottom: 25px; */
     /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-evenly;
+    row-gap: 20px;
 }
 
 
@@ -226,10 +228,15 @@
     img{
         display: flex;
         /* border:2px solid red; */
-        border-radius: 25px;
-        height: 330px;
+        /* border-radius: 25px; */
+        /* height: 330px; */
+        height:50%;
         width:100%;
         padding:100px;
+        padding-right: 100px;
+        padding-left: 120px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
         
 
     }
@@ -276,71 +283,82 @@
 }
 
 .project-cards{
-    /* border: 2px solid red; */
     display:grid;
     grid-template-columns: repeat(3, 400px);
     justify-content: space-evenly;
     gap:10px;
 
     div{
-        /* padding: 5px; */
+        margin-bottom: 25px;
         background-color: rgb(18,23,40);
         border:2px solid rgb(38,50,70);
         border-radius: 25px;
         padding-bottom: 40px;
-        /* padding:30px; */
     }
+}
+
+.get-in-touch-cards div{
+    display: inline-block;
+    margin-right: 100px;
+    /* padding:100px; */
+    border: 2px solid red;
 }
 
 .get-in-touch{
     background: rgb(9,13,31);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     padding:110px;
+}
 
-    h2{
+.get-in-touch .get-in-touch-header{
+     h2{
         color: rgb(255, 255, 255);
         font-size: 50px;
-        /* margin-top: 60px; */
         text-align: center;
-        
+        margin-bottom:30px;
     }
 
     p{
         color: rgb(124,140,169);
-        /* margin-top: 40px; */
-        text-align: left;
-    }
-
-    h3{
-        color: rgb(255, 255, 255);
-    }
-
+        text-align: center;
+        padding-bottom: 60px;
+    } 
 }
 
 .get-in-touch-cards{
-    display:grid;
-    grid-template-columns: repeat (2,400px);
+
+    h3{
+        color: rgb(255, 255, 255);
+        padding-bottom: 30px;
+        font-size: 30px;
+        font-weight: 350;
+    }
 }
 
 .get-in-touch ul{
     li{
         border:2px solid rgb(38,50,70);
         border-radius: 10px;
-        padding: 10px;
+        padding: 20px;
+        padding-right: 200px;
         list-style: none;
         color:white;
         margin: 10px;
-        /* display: inline; */
+        display:block;
+        display: flex;
     }
 
-    /* p{
-        
-    } */
+    p{
+        display:inline;
+    }
 
     i{
+        margin-right: 10px;
+        text-align: center;
         border: 2px solid red;
         border-radius: 10px;
         padding:15px;
+        padding-right: 30px;
         background: conic-gradient(rgb(122,0,251),rgb(62,87,255),rgb(122,0,251));
     }
 }
@@ -349,20 +367,35 @@
     border:2px solid rgb(38,50,70);
     border-radius: 20px;
     padding: 20px;
-    margin:7px;
+    /* padding-right: 20px; */
+    /* margin:17px; */
+    background-color: rgb(14,20,37);
 
     input{
-        padding: 10px;
-        border: rgb(38, 50, 70);
+        margin: 10px 0;
+        padding: 15px;
+        padding-right: 170px;
+        border:2px solid rgb(38, 50, 70);
         border-radius: 10px;
-        background-color: rgb(13,18,33);
+        background-color: rgb(14,18,35);
         color:rgb(78,95,123);
+        font-size: 17px;
     }
 
     textarea{
-        padding: 10px;
-        border: rgb(38, 50, 70);
+        resize: none;
+        margin: 10px 0;
+        padding: 15px;
+        /* padding-right: 100px; */
+        border: 2px solid rgb(38, 50, 70);
         border-radius: 10px;
-        background-color: rgb(13,18,33);
+        background-color: rgb(14,18,35);
+        font-size:17px;
     }
+}
+
+.input-header{
+    color: rgb(191,204,219);
+    font-size: 17px;
+    /* margin-bottom: 20px; */
 }
